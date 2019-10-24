@@ -39,10 +39,10 @@ $palette: (
 
 .site-header, .social-links { display: none !important; }
 
-a {
+article a {
   border-bottom: 2px solid rgba(94,250,250,0.4);
 }
-a:hover {
+article a:hover {
   border-bottom: 2px solid rgba(94,250,250,1);
 }
   
@@ -83,7 +83,7 @@ a:hover {
   text-align: center;
 }
 
-.site-info:a, site-info a:hover {
+.site-info a, site-info a:hover {
   border-bottom: none !important;
 }
 
