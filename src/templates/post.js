@@ -3,7 +3,7 @@ import _ from 'lodash';
 import moment from 'moment-strftime';
 
 import {Layout} from '../components/index';
-import {htmlToReact, safePrefix} from '../utils';
+import {htmlToReact, safePrefix, Link} from '../utils';
 
 export default class Post extends React.Component {
     render() {
@@ -11,6 +11,7 @@ export default class Post extends React.Component {
             <Layout {...this.props}>
               <article className="post post-full">
                 <header className="post-header">
+                    <p><Link to="/">Takaisin</Link></p>
                   <div className="post-meta">
                     <time className="published"
                       dateTime={moment(_.get(this.props, 'pageContext.frontmatter.date')).strftime('%Y-%m-%d %H:%M')}>{moment(_.get(this.props, 'pageContext.frontmatter.date')).strftime('%d.%m.%Y')}</time>
