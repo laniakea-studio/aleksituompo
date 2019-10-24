@@ -2,7 +2,9 @@
  * Site Header
  * ----------------------------------------------------------------------------
  */
+
 .site-header {
+  display: none !important;
   background: #fff;
   border-top: 5px solid _palette(accent);
   border-bottom: 1px solid _palette(border);
