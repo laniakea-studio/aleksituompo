@@ -9,9 +9,9 @@ export default class Post extends React.Component {
     render() {
         return (
             <Layout {...this.props}>
+              <p><Link to="/" className="btn-back">Takaisin</Link></p>
               <article className="post post-full">
                 <header className="post-header">
-                    <p><Link to="/" className="btn-back">Takaisin</Link></p>
                   <div className="post-meta">
                     <time className="published"
                       dateTime={moment(_.get(this.props, 'pageContext.frontmatter.date')).strftime('%Y-%m-%d %H:%M')}>{moment(_.get(this.props, 'pageContext.frontmatter.date')).strftime('%d.%m.%Y')}</time>
@@ -30,9 +30,9 @@ export default class Post extends React.Component {
                 }
                 <div className="post-content">
                   {htmlToReact(_.get(this.props, 'pageContext.html'))}
-                    <p><Link to="/" className="btn-back">Takaisin</Link></p>
                 </div>
               </article>
+              <p><Link to="/" className="btn-back">Takaisin</Link></p>
             </Layout>
         );
     }
