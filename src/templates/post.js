@@ -30,6 +30,7 @@ export default class Post extends React.Component {
                 }
                 <div className="post-content">
                   {htmlToReact(_.get(this.props, 'pageContext.html'))}
+                    <p><Link to="/">Takaisin</Link></p>
                 </div>
               </article>
             </Layout>
