@@ -45,12 +45,14 @@ $palette: (
 
 @media only screen and (max-width: 600px) {
   .post-content {
-  font-size: 1.2em; 
+  font-size: 1.4em; 
   }
 }
 
 .btn-back {
   font-family: "ff-dagny-web-pro", sans-serif; 
+  float: right;
+  font-size: 0.9em;
 }
 
 .published {
@@ -59,4 +61,5 @@ $palette: (
 
 .post-excerpt {
   font-family: "ff-dagny-web-pro", sans-serif;
+  font-size
 }
