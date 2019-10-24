@@ -37,8 +37,15 @@ $palette: (
 
 // aleksituompo.fi Custom CSS
 
-.site-header { display: none !important; }
+.site-header, .social-links { display: none !important; }
 
+a {
+  border-bottom: 2px solid rgba(94,250,250,0.7) !important;
+}
+a:hover {
+  border-bottom: 2px solid rgba(94,250,250,1) !important;
+}
+  
 .post-content {
   font-size: 1.6em; 
 }
@@ -63,3 +70,19 @@ $palette: (
   font-family: "ff-dagny-web-pro", sans-serif;
   font-size: 1.1em;
 }
+
+.post-subtitle {
+  font-family: "ff-dagny-web-pro", sans-serif;
+}
+
+.site-info {
+  font-family: "ff-dagny-web-pro", sans-serif;
+  text-transform: none;
+  width: 100%;
+  font-size: 0.9em;
+}
+
+.site-info:a, site-info a:hover {
+  border-bottom: none !important;
+}
+
