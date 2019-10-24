@@ -1,4 +1,4 @@
-// Adobe Fonts Import
+// Adobe Fonts Import for aleksituompo.fi
 @import url("https://use.typekit.net/zlz8ydl.css");
 
 // Font.
@@ -34,3 +34,29 @@ $palette: (
 @import "imports/subscribe";
 @import "imports/footer";
 @import "imports/palettes";
+
+// aleksituompo.fi Custom CSS
+
+.site-header { display: none !important; }
+
+.post-content {
+  font-size: 1.6em; 
+}
+
+@media only screen and (max-width: 600px) {
+  .post-content {
+  font-size: 1.2em; 
+  }
+}
+
+.btn-back {
+  font-family: "ff-dagny-web-pro", sans-serif; 
+}
+
+.published {
+  font-family: "ff-dagny-web-pro", sans-serif;
+}
+
+.post-excerpt {
+  font-family: "ff-dagny-web-pro", sans-serif;
+}
