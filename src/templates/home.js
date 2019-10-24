@@ -26,11 +26,7 @@ export default class Home extends React.Component {
                     </Link>
                     }
                     <div className="post-card-content">
-                      <header className="post-header">
-                        <div className="post-meta">
-                          <time className="published"
-                          dateTime={moment(_.get(post, 'frontmatter.date')).strftime('%Y-%m-%d %H:%M')}>{moment(_.get(post, 'frontmatter.date')).strftime('%Y')}</time>
-                        </div>
+                      <header className="post-header">                       
                         <h2 className="post-title"><Link to={safePrefix(_.get(post, 'url'))} rel="bookmark">{_.get(post, 'frontmatter.title')}</Link></h2>
                       </header>
                       <div className="post-excerpt">
